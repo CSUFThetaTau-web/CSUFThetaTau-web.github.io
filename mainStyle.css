@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+:root {
+    --duskDark-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --softWhite-color: #FAFAFA;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--softWhite-color);
+}
+
+body {
+    background: var(--softWhite-color);
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--duskDark-color);
+}
+
+p {
+    margin: 10px, 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+header {
+    background: var(--duskDark-color);
+}
+
+section {
+    background: var(--softWhite-color);
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+
+footer {
+    background: var(--softWhite-color);
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* ===== Classes ===== */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--softWhite-color);;
+    z-index: 2;
+}
+
+/* Nav classes */
+.navigation {
+    background-color: var(--duskDark-color);
+    color: var(--softWhite-color);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation .menuItem {
+    color: var(--softWhite-color);
+	font-size: larger;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navigation .menuItem:hover {
+    background-color: var(--jacqueminotRed-color);
+    border-radius: 17px;
+    transition: all 0.15s ease;
+}
+
+.navigation .flex {
+    justify-content: space-between;
+}
+/* Nav classes */
+
+/* Body of Footer */
+.OrgLinksContainer {
+    color: var(--duskDark-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+
+.LocationContainer {
+    color: var(--duskDark-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+
+.MainSocialsContainer {
+    color: var(--duskDark-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+/* Body of Footer */
+
+/* Grids */
+.LowerFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.LowerFooter .boxes {
+    padding: 1em;
+    background-color: #fafafa77;
+}
+/* Grids */
+
+/* ===== LINKS CLASSES ===== */
+.LinksContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.LinksContainer .linksButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.LinksContainer .linksButton:hover {
+    width: 200px;
+    color: var(--duskDark-color);
+}
+
+.LinksContainer .linksButton .linksIcon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.4s ease-out;
+    color: var(--softWhite-color);
+}
+
+.LinksContainer .linksButton #Cog_icon {
+    margin-right: 5px;
+    background: var(--jacqueminotRed-color);
+}
+
+.LinksContainer .linksButton #Grad_icon {
+    margin-right: 6px;
+    background: #0d264d;
+}
+
+.LinksContainer .linksButton:hover #Cog_icon {
+    background: var(--jacqueminotRed-color);
+}
+
+.LinksContainer .linksButton:hover #Grad_icon {
+    background: #0d264d;
+}
+
+.LinksContainer .linksButton .linksIcon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.2s ease-out;
+}
+
+.LinksContainer .linksButton:hover .linksIcon i {
+    color: var(--softWhite-color);
+}
+
+.LinksContainer .linksButton span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 8px;
+    margin-right: 23px;
+    transition: all 0.2s ease-out;
+}
+
+.LinksContainer .linksButton:hover #Cog_span {
+    color: var(--jacqueminotRed-color);
+}
+
+.LinksContainer .linksButton:hover #Grad_span {
+    color: #0d264d;
+}
+/* ===== LINKS CLASSES ===== */
+
+/* ===== SOCIAL MEDIA CLASSES ===== */
+.SocialsContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.SocialsContainer .socialsButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.SocialsContainer .socialsButton:hover {
+    width: 180px;
+    color: var(--softWhite-color);
+}
+
+.SocialsContainer .socialsButton .socialsIcon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.4s ease-out;
+    color: var(--softWhite-color);
+}
+
+.SocialsContainer .socialsButton #FB_icon {
+    margin-right: 15px;
+    background: #4267B2;
+}
+
+.SocialsContainer .socialsButton #IG_icon {
+    margin-right: 8px;
+    background: #E1306C;
+}
+
+.SocialsContainer .socialsButton:hover #FB_icon {
+    background: #4267B2;
+}
+
+.SocialsContainer .socialsButton:hover #IG_icon {
+    background: #E1306C;
+}
+
+.SocialsContainer .socialsButton .socialsIcon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.2s ease-out;
+}
+
+.SocialsContainer .socialsButton:hover .socialsIcon i {
+    color: var(--softWhite-color);
+}
+
+.SocialsContainer .socialsButton span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 8px;
+    margin-right: 23px;
+    transition: all 0.2s ease-out;
+}
+
+.SocialsContainer .socialsButton #FB_span {
+    color: #4267B2;
+}
+
+.SocialsContainer .socialsButton #IG_span {
+    color: #E1306C;
+}
+/* ===== SOCIAL MEDIA CLASSES ===== */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.desktopLocateInfo {
+    padding-top: 5em;
+}
+
+.LocationContainer {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.OrgLinksContainer {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.MainSocialsContainer {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--duskDark-color);
+    font-size: 15px;
+}
+
+/* ===== IDs ===== */
+#logoImg {
+    padding-top: 5px;
+    width: 75px;
+    min-width: 75px;
+}
+
+/* ===== Mobile ===== */
+/* 1080p mobile displays */
+@media(min-width: 1440px) {
+    .toggle {
+        display: none;
+    }
+
+    .mobileLocateInfo {
+        display: none;
+    }
+}
+
+/* standard mobile display */
+@media(max-width: 1440px) {
+    section {
+        padding-top: 150px;
+    }
+
+    /* === Nav === */
+    .navigation {
+        height: 150px;
+    }
+
+    #logoImg {
+        width: 100px;
+        min-width: 100px;
+    }
+	/* === Nav === */
+
+    /* === toggle menu === */
+    .mobileMenu {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 10;
+        width: 100%;
+        max-width: 1100px;
+        padding: 0;
+        background: var(--duskDark-color);
+    }
+
+    .mobileNav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 10;
+        background: var(--duskDark-color);
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        position: fixed;
+    }
+
+    .mobileNav-menu.active {
+        background: var(--duskDark-color);
+        top: 0;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    .mobile-toggle .bar {
+        width: 75px;
+        height: 6px;
+        margin: 13px auto;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        background: var(--softWhite-color);
+    }
+
+    .internal-mobile-toggle .bar {
+        width: 75px;
+        height: 6px;
+        margin: 13px auto;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        background: var(--softWhite-color);
+    }
+
+    .mobileNav-item {
+        width: 100%;
+    }
+
+    .mobileNav-link {
+        color: var(--softWhite-color);
+        text-align: center;
+        padding: 0.7rem;
+        width: 100%;
+        display: table;
+        font-size: 65px;
+    }
+
+    .mobile-image {
+        padding: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileNav-imgItem {
+        width: 100px;
+    }
+
+    #internal-mobile-menu {
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    
+    #mobile-menu {
+        position: absolute;
+        top: 17%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .mobile-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .internal-mobile-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(19px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(19px) rotate(45deg);
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+    /* === toggle menu === */
+
+    .headNav {
+        display: none;
+    }
+
+    .lowerNavigation {
+        display: none;
+    }
+
+    .FootLayout {
+        padding-top: 20px;
+    }
+
+    .desktopLocateInfo {
+        display: none;
+    }
+
+    .LocationContainer {
+        font-size: 25px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+
+    /* ===== LINKS CLASSES ===== */
+    .LinksContainer .linksButton {
+        height: 80px;
+		width: 80px;
+		border-radius: 80px;
+    }
+
+    .LinksContainer .linksButton:hover {
+        width: 80px;
+    }
+
+	.LinksContainer .linksButton .linksIcon {
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		padding-top: 2px;
+	}
+    
+    .LinksContainer .linksButton #Cog_icon {
+        background: var(--jacqueminotRed-color);
+    }
+    
+    .LinksContainer .linksButton #Grad_icon {
+        background: #0d264d;
+    }
+    
+    .LinksContainer .linksButton .linksIcon i {
+        color: var(--softWhite-color);
+    }
+    
+    .LinksContainer .linksButton #Cog_span {
+        color: var(--jacqueminotRed-color);
+    }
+    
+    .LinksContainer .linksButton #Grad_span {
+        color: #0d264d;
+    }
+    /* ===== LINKS CLASSES ===== */
+
+    /* ===== SOCIAL MEDIA CLASSES ===== */
+    .SocialsContainer .socialsButton {
+        height: 80px;
+		width: 80px;
+		border-radius: 80px;
+    }
+
+    .SocialsContainer .socialsButton:hover {
+        width: 80px;
+    }
+
+    .SocialsContainer .socialsButton .socialsIcon {
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		padding-top: 2px;
+	}
+    
+    .SocialsContainer .socialsButton #FB_icon {
+        background: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton #IG_icon {
+        background: #E1306C;
+    }
+    
+    .SocialsContainer .socialsButton .socialsIcon i {
+        color: var(--softWhite-color);
+    }
+    
+    .SocialsContainer .socialsButton #FB_span {
+        color: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton #IG_span {
+        color: #E1306C;
+    }
+    /* ===== SOCIAL MEDIA CLASSES ===== */
+}
+
+@media (max-width: 1440px) and (max-height: 1080px) {
+    .mobileNav-menu.active {
+        height: 80vh;
+    }
+
+    .mobileNav-link {
+        font-size: 55px;
+    }
+}
+/* ===== Mobile ===== */
+

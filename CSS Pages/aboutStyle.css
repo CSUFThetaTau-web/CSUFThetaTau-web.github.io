@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,500,600,700&display=swap'); /* Roboto Font */
+
+:root {
+    --duskDark-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --softWhite-color: #FAFAFA;
+    --lightGray-color: #dddcdc;
+}
+
+/* === Attributes === */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--softWhite-color);
+}
+
+/* === Classes === */
+.pillars {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+
+.pillars div {
+    padding: 1em;
+}
+
+.histories {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+
+.brotherhood-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--duskDark-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.profesh-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--duskDark-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.community-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--duskDark-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--duskDark-color);
+    font-size: small;
+}
+
+.gridText-pillars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--duskDark-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.gridText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--duskDark-color);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.pillarTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--sashGold-color);
+}
+
+.chaptHistTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--sashGold-color);
+}
+
+.natHistTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--sashGold-color);
+}
+
+/* = Nested Grid Formatting = */
+.nested-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.nested-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.nested-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+/* = Nested Grid Formatting = */
+
+.pillarsImages {
+    width: 100%;
+}
+
+#num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightGray-color);
+    border-radius: 13px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--jacqueminotRed-color);
+}
+
+#broImg img {
+    border-radius: 25px;
+}
+
+#profreshImg img {
+    border-radius: 25px;
+}
+
+#serviceImg img {
+    border-radius: 25px;
+}
+
+#PEImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PEImg img {
+    width: 240px;
+}
+
+#shieldImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shieldImg img {
+    width: 240px;
+}
+
+/* responsive screen sizing */
+@media screen and (min-width: 1920px) {
+    .pillars {
+        width: 50%;
+        min-width: 50%;
+    }
+
+    .gridText {
+        font-size: medium;
+    }
+
+    .histories {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .pillars {
+        width: 80%;
+        min-width: 80%;
+    }
+
+	.pillarTitle {
+		font-size: 55px;
+	}
+
+	.chaptHistTitle {
+		font-size: 55px;
+	}
+
+	.natHistTitle {
+		font-size: 55px;
+	}
+
+    .gridText {
+        font-size: 19px;
+    }
+}

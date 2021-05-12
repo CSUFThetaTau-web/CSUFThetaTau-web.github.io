@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,500,600,700&display=swap'); /* Roboto Font */
+
+:root {
+    --duskDark-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --softWhite-color: #FAFAFA;
+    --lightGray-color: #dddcdc;
+}
+
+/* === Attributes === */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--softWhite-color);
+}
+
+/* ===== Classes =====  */
+.sectionContainer {
+    width: 100%;
+    padding: 0 1rem 0;
+}
+
+.boardGrids {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    
+}
+
+.boardGrids div {
+    padding: 1em;
+}
+
+.memberGrids {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+
+.memberGrids div {
+    padding: 1em;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    color: var(--duskDark-color);
+    font-size: small;
+}
+
+/* = Nested Grid Formatting = */
+.Eboard-nested-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.Eboard-nested-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.Aboard-nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.members-nested {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+}
+/* = Nested Grid Formatting = */
+
+/* = Nested Member Info = */
+.alpha-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.beta-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.gamma-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.delta-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.epsilon-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.zeta-nested {
+    text-align: center;
+    font-size: 17px;
+}
+
+.pageTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    font-size: 65px;
+    color: var(--jacqueminotRed-color);
+}
+
+.EboardTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--sashGold-color);
+}
+
+.AboardTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--sashGold-color);
+}
+
+.memberTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    font-size: 45px;
+    color: var(--sashGold-color);
+}
+
+.class-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--jacqueminotRed-color);
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+}
+
+.img img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.names {
+    text-align: center;
+    font-size: 17px;
+}
+
+.spacing {
+    padding-left: 2em;
+    padding-right: 1.7em;
+}
+
+.TT-info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* responsive screen sizing */
+@media screen and (max-width: 1920px) {
+    .boardGrids {
+        width: 55%;
+        min-width: 55%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .boardGrids {
+        width: 80%;
+        min-width: 80%;
+    }
+}

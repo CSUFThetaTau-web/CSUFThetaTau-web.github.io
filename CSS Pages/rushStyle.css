@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+:root {
+    --duskDark-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --softWhite-color: #FAFAFA;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--softWhite-color);
+}
+
+/* ===== Classes =====  */
+.sectionContainer {
+    width: 100%;
+}
+
+.LevelupTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: var(--duskDark-color);
+}
+
+.levelUp {
+    display: flex;
+    font-size: 45px;
+    color: var(--jacqueminotRed-color);
+}
+
+.midSectionContaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rushInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	text-align: center;
+    font-size: 25px;
+    width: 80%;
+    font-weight: 500;
+    color: var(--duskDark-color);
+}
+
+/* = Grids = */
+.educatorGrids {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+}
+
+.educatorGrids div {
+    padding: 1em;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    color: var(--duskDark-color);
+    font-size: small;
+}
+
+.educator-nested-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.parent-nested-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.educatorTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--sashGold-color);
+}
+
+.parentTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--sashGold-color);
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+}
+
+.img img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.names {
+    text-align: center;
+    font-size: 17px;
+}
+
+.spacing {
+    padding-left: 2em;
+    padding-right: 1.7em;
+}
+
+.TT-info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flyers {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: 0;
+}
+
+.flyers div {
+    padding: 1em;
+}
+
+.flyer-nested {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.flyerTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--sashGold-color);
+}
+/* = Grids = */
+
+.eventINFO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	text-align: center;
+    font-size: 60px;
+    color: var(--jacqueminotRed-color);
+}
+
+.flyerINFO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--duskDark-color);
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.nextStepTextFont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: black
+}
+
+.submit-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--softWhite-color);
+    background-image: linear-gradient(var(--sashGold-color) 0%, var(--sashGold-color) 15%, 
+        var(--jacqueminotRed-color) 90%, var(--jacqueminotRed-color) 100%);
+    font-size: 20px;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.readyButton:hover {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 15px 25px -5px;
+    transform: scale(1.03);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.readyButton:active {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 4px 8px;
+    transform: scale(0.9);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* responsive screen sizing */
+@media screen and (min-width: 1440px) {
+    .flyers {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .flyerINFO {
+        margin-left: 18rem;
+        margin-right: 18rem;
+    }
+
+    .flyer-nested {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .educator-nested-2 {
+        grid-template-columns: 1fr; 
+    }
+}
