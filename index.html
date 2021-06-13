@@ -1,4 +1,4 @@
-<!-- TT Site V3.0 Approved -->
+<!-- TT Site V3.1 Approved -->
 <!DOCTYPE html>
 <html> 
     <main>
@@ -10,6 +10,7 @@
             
             <title>CSUF Theta Tau | Home</title>
 
+            <!-- Search Engine description "snippet" used to describe webpage in search results -->
             <meta name="description" content="Welcome to the Phi Epsilon Chaper of Theta Tau, the nations foremost co-ed professional engineering fraternity.">
         </head>
 
@@ -21,16 +22,19 @@
                         <div class="container flex">
                             <a id="logoImg" href="index.html"><img src="images/logo2.png" 
                                 alt="Theta Tau Phi Epsilon Chapter Logo"></a>
-                            <nav class="headNav">
+                            <nav class="headNav"> <!--main tab navigation system-->
                                 <ul>
                                     <li><a class="menuItem" href="index.html">Home</a></li>
                                     <li><a class="menuItem" href="about.html">About</a></li>
                                     <li><a class="menuItem" href="bros.html">Brothers</a></li>
                                     <li><a class="menuItem" href="rush.html">Rush</a></li>
                                     <li><a class="menuItem" href="contact.html">Contact</a></li>
+                                    <li class="darkmode-toggle"><img class="darkmode-icon" src="images/moon.png" id="icon-1"></li>
                                 </ul>
                             </nav>
-                            <div class="toggle"></div>
+                            <div class="darkmode-mobile-toggle">
+                                <div class="darkmode-icon"><img src="images/moon.png" id="icon-2"></div>
+                            </div>
                         </div> <!-- Nav Container-->
                         <div class="mobile-toggle" id="mobile-menu">
                             <span class="bar"></span>
@@ -48,7 +52,7 @@
                         <a id="ProfImg" href="#"><img src="images/Image1HP.png" alt="Phi Epsilon Professional Group Photo"></a>
                         <br><br><br><br><br>     
                         <div class="FirstTitle">
-                            <strong><p class="title">Our Mission</p></strong>
+                            <strong><p class="title">Our Mission</p></strong><br>
                             <p class="text">To unite students of innovation through brotherhood, professionalism, and service.</p>
                             <br><br><br><br><br>
                             <div class="flagImg">
@@ -57,7 +61,7 @@
                         </div>
                         <br><br><br><br><br>
                         <div class="SecondTitle">
-                            <strong><p class="title">Our Identity</p></strong>
+                            <strong><p class="title">Our Identity</p></strong><br>
                             <p class="text">We are a co-ed professional engineering fraternity that strives to develop and maintain a high standard of professional interest among its members, and to unite them in a strong bond of fraternal fellowship.</p>
                             <br><br><br><br><br>
                             <div class="groupRushImg">
@@ -65,7 +69,7 @@
                             </div>
                         <br><br><br><br><br>
                         <div class="ThirdTitle">
-                            <strong><p class="title">Our Purpose</p></strong>
+                            <strong><p class="title">Our Purpose</p></strong><br>
                             <p class="text">We work to improve not only ourselves, but each other through group activities, bonding excercises, and expanding our brand to the world.</p>
                         </div><br><br><br><br><br><br>
                         <div class="AreYouReady">
@@ -93,7 +97,7 @@
                                             <div class="linksIcon" id="Cog_icon"><i class="fas fa-cog"></i></div>
                                             <span id="Cog_span">ThetaTau.org</span>
                                         </a>
-                                    </div></br>
+                                    </div>
                                     <div class="linksButton csuf">
                                         <a target="_blank" href="http://www.fullerton.edu/">
                                             <div class="linksIcon" id="Grad_icon"><i class="fas fa-user-graduate"></i></div>
@@ -105,6 +109,7 @@
                             <div class="LocationContainer">
                                 <br/><p class="desktopLocateInfo">Phi Epsilon Chapter<br/>California State University, Fullerton</p><br/>
                                 <br/><p class="mobileLocateInfo">Phi Epsilon Chapter<br/>CSU Fullerton</p><br/>
+                            </div> <!-- 
                             </div> <!-- Location Container -->
                             <div class="MainSocialsContainer">
                                 <p>FOLLOW US</p><br/>
@@ -114,7 +119,7 @@
                                             <div class="socialsIcon" id="FB_icon"><i class="fab fa-facebook-f"></i></div>
                                             <span id="FB_span">Facebook</span>
                                         </a>
-                                    </div></br>
+                                    </div>
                                     <div class="socialsButton">
                                         <a target="_blank" href="https://www.instagram.com/csufthetatau/">
                                             <div class="socialsIcon" id="IG_icon"><i class="fab fa-instagram"></i></div>
@@ -146,21 +151,11 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mobileNav-item">
-                            <a class="mobileNav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="mobileNav-item">
-                            <a class="mobileNav-link" href="about.html">About</a>
-                        </li>
-                        <li class="mobileNav-item">
-                            <a class="mobileNav-link" href="bros.html">Brothers</a>
-                        </li>
-                        <li class="mobileNav-item">
-                            <a class="mobileNav-link" href="rush.html">Rush</a>
-                        </li>
-                        <li class="mobileNav-item">
-                            <a class="mobileNav-link" href="contact.html">Contact</a>
-                        </li><br>
+                        <li class="mobileNav-item"><a class="mobileNav-link" href="index.html">Home</a></li>
+                        <li class="mobileNav-item"><a class="mobileNav-link" href="about.html">About</a></li>
+                        <li class="mobileNav-item"><a class="mobileNav-link" href="bros.html">Brothers</a></li>
+                        <li class="mobileNav-item"><a class="mobileNav-link" href="rush.html">Rush</a></li>
+                        <li class="mobileNav-item"><a class="mobileNav-link" href="contact.html">Contact</a></li><br>
                     </ul>
                 </nav>
             </div> <!-- mobileMenu area -->

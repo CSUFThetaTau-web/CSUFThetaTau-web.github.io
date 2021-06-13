@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
 
+/* Main set of ΦΕ color variables */
 :root {
-    --duskDark-color: #12111A;
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
     --jacqueminotRed-color: #700000;
     --sashGold-color: #CB9E00;
-    --softWhite-color: #FAFAFA;
+    --lightGray-color: #dddcdc;
+}
+
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
     --lightGray-color: #dddcdc;
 }
 
@@ -18,11 +29,11 @@
 main {
     min-width: 520px;
     font-family: 'Poppins', sans-serif;
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
 }
 
 body {
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
     line-height: 1.6;
 }
 
@@ -32,7 +43,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
 }
 
 p {
@@ -48,11 +59,11 @@ h1, h2 {
 }
 
 header {
-    background: var(--duskDark-color);
+    background: var(--duskdark-color);
 }
 
 section {
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
     color: gray;
     display: flex;
     flex-direction: row;
@@ -60,7 +71,7 @@ section {
 }
 
 footer {
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -74,14 +85,14 @@ footer {
     right: 0;
     width: 100%;
     min-height: 100vh;
-    background: var(--softWhite-color);;
+    background: var(--secondary-color);;
     z-index: 2;
 }
 
 /* Nav classes */
 .navigation {
-    background-color: var(--duskDark-color);
-    color: var(--softWhite-color);
+    background-color: var(--duskdark-color);
+    color: var(--secondary-color);
     height: 80px;
     position: fixed;
     width: 100%;
@@ -93,7 +104,7 @@ footer {
 }
 
 .navigation .menuItem {
-    color: var(--softWhite-color);
+    color: var(--softwhite-color);
 	font-size: larger;
     padding: 10px;
     margin: 0 5px;
@@ -112,19 +123,19 @@ footer {
 
 /* Body of Footer */
 .OrgLinksContainer {
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
 	margin-top: 15px;
 }
 
 .LocationContainer {
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
 	margin-top: 15px;
 }
 
 .MainSocialsContainer {
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
 	margin-top: 15px;
 }
@@ -169,7 +180,9 @@ footer {
 
 .LinksContainer .linksButton:hover {
     width: 200px;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
+    background-color: var(--softwhite-color);
+    border-radius: black solid 2px;
 }
 
 .LinksContainer .linksButton .linksIcon {
@@ -180,36 +193,33 @@ footer {
     border-radius: 50px;
     box-sizing: border-box;
     line-height: 50px;
-    transition: all 0.4s ease-out;
-    color: var(--softWhite-color);
+    color: var(--softwhite-color);
 }
 
 .LinksContainer .linksButton #Cog_icon {
-    margin-right: 5px;
+    margin-right: 4px;
     background: var(--jacqueminotRed-color);
 }
 
 .LinksContainer .linksButton #Grad_icon {
-    margin-right: 6px;
+    margin-right: 5px;
     background: #0d264d;
 }
 
 .LinksContainer .linksButton:hover #Cog_icon {
-    background: var(--jacqueminotRed-color);
+    background: var(--softwhite-color);
+    color: var(--jacqueminotRed-color);
 }
 
 .LinksContainer .linksButton:hover #Grad_icon {
-    background: #0d264d;
+    background: var(--softwhite-color);
+    color: #0d264d;
 }
 
 .LinksContainer .linksButton .linksIcon i {
     font-size: 25px;
     line-height: 50px;
-    transition: all 0.2s ease-out;
-}
-
-.LinksContainer .linksButton:hover .linksIcon i {
-    color: var(--softWhite-color);
+    transition: all 0.2s ease;
 }
 
 .LinksContainer .linksButton span {
@@ -217,7 +227,7 @@ footer {
     font-weight: 500;
     line-height: 50px;
     margin-left: 8px;
-    margin-right: 23px;
+    margin-right: 16px;
     transition: all 0.2s ease-out;
 }
 
@@ -255,8 +265,9 @@ footer {
 }
 
 .SocialsContainer .socialsButton:hover {
-    width: 180px;
-    color: var(--softWhite-color);
+    width: 181px;
+    color: var(--softwhite-color);
+    background-color: var(--softwhite-color);
 }
 
 .SocialsContainer .socialsButton .socialsIcon {
@@ -267,44 +278,43 @@ footer {
     border-radius: 50px;
     box-sizing: border-box;
     line-height: 50px;
-    transition: all 0.4s ease-out;
-    color: var(--softWhite-color);
+    color: var(--softwhite-color);
 }
 
 .SocialsContainer .socialsButton #FB_icon {
-    margin-right: 15px;
+    margin-right: 11px;
     background: #4267B2;
 }
 
 .SocialsContainer .socialsButton #IG_icon {
-    margin-right: 8px;
+    margin-right: 5px;
     background: #E1306C;
 }
 
 .SocialsContainer .socialsButton:hover #FB_icon {
-    background: #4267B2;
+    background: var(--softwhite-color);
+    color: #4267B2;
 }
 
 .SocialsContainer .socialsButton:hover #IG_icon {
-    background: #E1306C;
+    background: var(--softwhite-color);
+    color: #E1306C;
 }
 
 .SocialsContainer .socialsButton .socialsIcon i {
     font-size: 25px;
     line-height: 50px;
-    transition: all 0.2s ease-out;
-}
-
-.SocialsContainer .socialsButton:hover .socialsIcon i {
-    color: var(--softWhite-color);
+    transition: all 0.2s ease;
 }
 
 .SocialsContainer .socialsButton span {
+    display: inline-block;
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 50px;
     margin-left: 8px;
-    margin-right: 23px;
+    margin-right: 19px;
     transition: all 0.2s ease-out;
 }
 
@@ -316,6 +326,33 @@ footer {
     color: #E1306C;
 }
 /* ===== SOCIAL MEDIA CLASSES ===== */
+
+/* === Darkmode === */
+.darkmode-toggle {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.darkmode-icon {
+    width: 25px;
+}
+
+.darkmode-toggle .darkmode-icon i {
+    color: white;
+}
+
+.darkmode-icon:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.9);
+}
+
+.darkmode-icon:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.05);
+}
+/* === Darkmode === */
 
 .container {
     max-width: 1300px;
@@ -354,7 +391,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 15px;
 }
 
@@ -366,7 +403,7 @@ footer {
 }
 
 /* ===== Mobile ===== */
-/* 1080p mobile displays */
+/* FHD+ (1080p & greater) desktop displays */
 @media(min-width: 1440px) {
     .toggle {
         display: none;
@@ -375,9 +412,13 @@ footer {
     .mobileLocateInfo {
         display: none;
     }
+
+    .darkmode-mobile-toggle {
+        display: none;
+    }
 }
 
-/* standard mobile display */
+/* -QHD (1440p & smaller) mobile displays */
 @media(max-width: 1440px) {
     section {
         padding-top: 150px;
@@ -394,6 +435,18 @@ footer {
     }
 	/* === Nav === */
 
+    /* === Darkmode === */
+    .darkmode-mobile-toggle {
+        margin-top: 1rem;
+        margin-right: 8rem;
+        cursor: pointer;
+    }
+    
+    .darkmode-icon {
+        width: 45px;
+    }
+    /* === Darkmode === */
+
     /* === toggle menu === */
     .mobileMenu {
         display: flex;
@@ -403,7 +456,7 @@ footer {
         width: 100%;
         max-width: 1100px;
         padding: 0;
-        background: var(--duskDark-color);
+        background: var(--duskdark-color);
     }
 
     .mobileNav-menu {
@@ -414,16 +467,17 @@ footer {
         position: absolute;
         top: -1000px;
         opacity: 1;
-        transition: all 0.6s ease;
+        transition: all 0.6s ease-in-out;
         z-index: 10;
-        background: var(--duskDark-color);
+        background: var(--duskdark-color);
+        border-bottom: var(--jacqueminotRed-color) solid 4px;
         border-bottom-left-radius: 60px;
         border-bottom-right-radius: 60px;
         position: fixed;
     }
 
     .mobileNav-menu.active {
-        background: var(--duskDark-color);
+        background: var(--duskdark-color);
         top: 0;
         opacity: 1;
         transition: all 0.5s ease-in-out;
@@ -437,8 +491,8 @@ footer {
         height: 6px;
         margin: 13px auto;
         border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-        background: var(--softWhite-color);
+        transition: all 0.2s ease-in-out;
+        background: var(--softwhite-color);
     }
 
     .internal-mobile-toggle .bar {
@@ -446,8 +500,8 @@ footer {
         height: 6px;
         margin: 13px auto;
         border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-        background: var(--softWhite-color);
+        transition: all 0.15s ease-in-out;
+        background: var(--softwhite-color);
     }
 
     .mobileNav-item {
@@ -455,7 +509,7 @@ footer {
     }
 
     .mobileNav-link {
-        color: var(--softWhite-color);
+        color: var(--softwhite-color);
         text-align: center;
         padding: 0.7rem;
         width: 100%;
@@ -546,6 +600,15 @@ footer {
         font-size: 20px;
     }
 
+    .showcase {
+        transition: all 0.4s ease-in-out;
+    }
+
+    .showcase.active {
+        transition: all 0.7s ease-in-out;
+        filter: blur(5px);
+    }
+
     /* ===== LINKS CLASSES ===== */
     .LinksContainer .linksButton {
         height: 80px;
@@ -573,7 +636,7 @@ footer {
     }
     
     .LinksContainer .linksButton .linksIcon i {
-        color: var(--softWhite-color);
+        color: var(--softwhite-color);
     }
     
     .LinksContainer .linksButton #Cog_span {
@@ -612,7 +675,7 @@ footer {
     }
     
     .SocialsContainer .socialsButton .socialsIcon i {
-        color: var(--softWhite-color);
+        color: var(--softwhite-color);
     }
     
     .SocialsContainer .socialsButton #FB_span {

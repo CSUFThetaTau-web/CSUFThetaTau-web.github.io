@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
 
 :root {
-    --duskDark-color: #12111A;
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
     --jacqueminotRed-color: #700000;
     --sashGold-color: #CB9E00;
-    --softWhite-color: #FAFAFA;
     --lightGray-color: #dddcdc;
-    --black-color: #000000;
 }
 
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,7 +28,7 @@
 main {
     min-width: 520px;
     font-family: 'Poppins', sans-serif;
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
 }
 
 /* ===== Classes ===== */
@@ -55,8 +65,8 @@ main {
     align-items: center;
     position: absolute;
     text-align: center;
-    background-color: var(--duskDark-color);
-    color: var(--softWhite-color);
+    background-color: var(--duskdark-color);
+    color: var(--softwhite-color);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font-size: x-large;
@@ -75,7 +85,7 @@ main {
     font-size: 25px;
     line-height: 33px;
     letter-spacing: 0.15em;
-    color: black;
+    color: var(--primary-color);
 }
 
 .nextStepTextFont {
@@ -85,7 +95,7 @@ main {
     font-weight: 600;
     font-size: 32px;
     text-align: center;
-    color: black
+    color: var(--primary-color);
 }
 
 .submit-area {
@@ -98,7 +108,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--softWhite-color);
+    color: var(--softwhite-color);
     background-image: linear-gradient(var(--sashGold-color) 0%, var(--sashGold-color) 15%, 
         var(--jacqueminotRed-color) 90%, var(--jacqueminotRed-color) 100%);
     font-size: 20px;
@@ -135,6 +145,13 @@ main {
 }
 
 /* mobile */
+@media screen and (min-width: 1920px) {
+    .text {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+
 @media (max-width: 1440px) {
     .chaptText {
         font-size: 22px;

@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:400,500,600,700&display=swap'); /* Roboto Font */
 
 :root {
-    --duskDark-color: #12111A;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
     --jacqueminotRed-color: #700000;
+    --classtitle-color: #700000;
     --sashGold-color: #CB9E00;
-    --softWhite-color: #FAFAFA;
     --lightGray-color: #dddcdc;
 }
 
-/* === Attributes === */
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --classtitle-color: #CB9E00;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,7 +28,7 @@
 main {
     min-width: 520px;
     font-family: 'Poppins', sans-serif;
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
 }
 
 /* ===== Classes =====  */
@@ -61,7 +71,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     grid-gap: 1em;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: small;
 }
 
@@ -160,7 +170,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    color: var(--jacqueminotRed-color);
+    color: var(--classtitle-color);
 }
 
 .images {
@@ -194,10 +204,22 @@ main {
 }
 
 /* responsive screen sizing */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     .boardGrids {
         width: 55%;
         min-width: 55%;
+    }
+
+    .memberGrids {
+        width: 70%;
+        min-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .boardGrids {
+        width: 50%;
+        min-width: 50%;
     }
 }
 

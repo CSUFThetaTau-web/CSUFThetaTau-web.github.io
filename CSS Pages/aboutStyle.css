@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:400,500,600,700&display=swap'); /* Roboto Font */
 
 :root {
-    --duskDark-color: #12111A;
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
     --jacqueminotRed-color: #700000;
     --sashGold-color: #CB9E00;
-    --softWhite-color: #FAFAFA;
     --lightGray-color: #dddcdc;
 }
 
-/* === Attributes === */
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,7 +28,7 @@
 main {
     min-width: 520px;
     font-family: 'Poppins', sans-serif;
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
 }
 
 /* === Classes === */
@@ -49,7 +59,7 @@ main {
 .brotherhood-head {
     grid-column-start: 1;
     grid-column-end: 3;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
     display: grid;
     grid-template-columns: 0.8fr 15fr;
@@ -59,7 +69,7 @@ main {
 .profesh-head {
     grid-column-start: 1;
     grid-column-end: 3;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
     display: grid;
     grid-template-columns: 0.8fr 15fr;
@@ -69,7 +79,7 @@ main {
 .community-head {
     grid-column-start: 1;
     grid-column-end: 3;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 25px;
     display: grid;
     grid-template-columns: 0.8fr 15fr;
@@ -80,7 +90,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: small;
 }
 
@@ -89,7 +99,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: 17px;
     font-weight: 600;
 }
@@ -99,7 +109,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     font-size: medium;
     font-weight: 600;
 }
@@ -157,6 +167,7 @@ main {
     justify-content: center;
     align-items: center;
     background: var(--lightGray-color);
+    color: var(--duskdark-color);
     border-radius: 13px;
     width: 40px;
     height: 40px;
@@ -198,16 +209,31 @@ main {
 /* responsive screen sizing */
 @media screen and (min-width: 1920px) {
     .pillars {
-        width: 50%;
-        min-width: 50%;
+        width: 45%;
+        min-width: 45%;
     }
 
-    .gridText {
-        font-size: medium;
+    .gridText-pillars {
+        font-size: 50px;
     }
 
     .histories {
         width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pillars {
+        width: 55%;
+        min-width: 55%;
+    }
+
+    .gridText-pillars {
+        font-size: 22px;
+    }
+
+    .gridText {
+        font-size: 20px;
     }
 }
 
@@ -230,6 +256,6 @@ main {
 	}
 
     .gridText {
-        font-size: 19px;
+        font-size: 21px;
     }
 }

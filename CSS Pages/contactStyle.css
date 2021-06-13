@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:400,500,600,700&display=swap'); /* Roboto Font */
 
 :root {
-    --duskDark-color: #12111A;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
     --jacqueminotRed-color: #700000;
+    --warning-color: red;
     --sashGold-color: #CB9E00;
-    --softWhite-color: #FAFAFA;
     --lightGray-color: #dddcdc;
 }
 
-/* === Attributes === */
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --jacqueminotRed-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,7 +27,7 @@
 main {
     min-width: 520px;
     font-family: 'Poppins', sans-serif;
-    background: var(--softWhite-color);
+    background: var(--secondary-color);
 }
 
 input {
@@ -92,7 +101,7 @@ textarea {
 .contact-form {
     height: auto;
     margin: auto;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
     padding: 1em;
     border-radius: 15px;
     font-size: 18px;
@@ -103,7 +112,7 @@ textarea {
     justify-content: center;
     align-items: center;
 	text-align: center;
-    color: var(--jacqueminotRed-color);
+    color: var(--warning-color);
 }
 
 .submit-area {
@@ -117,13 +126,27 @@ textarea {
     margin: 5px;
     background-color: var(--sashGold-color);
     border: 1px solid var(--sashGold-color);
-    color: var(--softWhite-color);
+    color: var(--secondary-color);
     font-size: inherit;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.5s;
     text-align: center;
     justify-content: center;
+}
+
+.submitBtn:hover {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 15px 25px -5px;
+    transform: scale(1.03);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:active {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 4px 8px;
+    transform: scale(0.9);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn span {
@@ -150,7 +173,7 @@ textarea {
     text-align: center;
     flex-basis: 50%;
     font-size: 25px;
-    color: var(--duskDark-color);
+    color: var(--primary-color);
 }
 
 .sectionContainer img {
@@ -162,6 +185,13 @@ textarea {
 }
 
 /* responsive screen sizing */
+@media screen and (min-width: 1950px) {
+    .formContainer form {
+        width: 30%;
+        min-width: 30%;
+    }
+}
+
 @media screen and (max-width: 1920px) {
     .formContainer form {
         width: 40%;
