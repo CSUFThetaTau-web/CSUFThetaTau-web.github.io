@@ -600,15 +600,6 @@ footer {
         font-size: 20px;
     }
 
-    .showcase {
-        transition: all 0.4s ease-in-out;
-    }
-
-    .showcase.active {
-        transition: all 0.7s ease-in-out;
-        filter: blur(5px);
-    }
-
     /* ===== LINKS CLASSES ===== */
     .LinksContainer .linksButton {
         height: 80px;
