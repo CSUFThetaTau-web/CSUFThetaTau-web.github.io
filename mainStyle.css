@@ -629,6 +629,14 @@ footer {
     .LinksContainer .linksButton .linksIcon i {
         color: var(--softwhite-color);
     }
+
+    .LinksContainer .linksButton:hover #Cog_icon {
+        background: var(--jacqueminotRed-color);
+    }
+    
+    .LinksContainer .linksButton:hover #Grad_icon {
+        background: #0d264d;
+    }
     
     .LinksContainer .linksButton #Cog_span {
         color: var(--jacqueminotRed-color);
@@ -667,6 +675,14 @@ footer {
     
     .SocialsContainer .socialsButton .socialsIcon i {
         color: var(--softwhite-color);
+    }
+
+    .SocialsContainer .socialsButton:hover #FB_icon {
+        background: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton:hover #IG_icon {
+        background: #E1306C;
     }
     
     .SocialsContainer .socialsButton #FB_span {
