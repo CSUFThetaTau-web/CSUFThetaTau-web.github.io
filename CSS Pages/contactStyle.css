@@ -47,6 +47,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 700px;
+    max-width: 700px;
 }
 
 .input-area {
@@ -184,36 +186,9 @@ textarea {
     /* top, right, bottom, left */
 }
 
-/* responsive screen sizing */
-@media screen and (min-width: 1950px) {
-    .formContainer form {
-        width: 30%;
-        min-width: 30%;
-    }
-}
-
-@media screen and (max-width: 1920px) {
-    .formContainer form {
-        width: 40%;
-        min-width: 40%;
-    }
-}
-
-@media screen and (max-width: 1680) {
-    .formContainer form {
-        width: 60%;
-        min-width: 60%;
-    }
-}
-
 /* ===== Mobile ===== */
 /* 1080p mobile displays */
 @media screen and (max-width: 1440px) {
-    .formContainer form {
-        width: 75%;
-        min-width: 75%;
-    }
-
 	.emailCompletetxt {
 		font-size: 25px;
 	}
