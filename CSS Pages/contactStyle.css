@@ -199,7 +199,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1680) {
+@media screen and (max-width: 1680px) {
     .formContainer form {
         width: 60%;
         min-width: 60%;
