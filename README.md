@@ -5,7 +5,7 @@ Based at California State University, Fullerton
 
 ## Description
 
-This is the official hosting page for our chapters offical organization website. This site is a place for the public, active members, and alumnus members to get quick information on our chapter with regards to progress and growth, as well as a place to contact us. 
+This is the official hosting page for our chapters organization website. This site is a place for the public, active members, and alumnus members to get quick information on our chapter with regards to progress and growth, as well as a place to contact us. 
 
 > This project is continually developing as a website, meeting place, and tool for our chapter.
 
