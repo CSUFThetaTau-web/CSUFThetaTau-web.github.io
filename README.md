@@ -1,4 +1,4 @@
-# Official hosting page of Theta Tau Phi Epsilon
+# Official hosting for Theta Tau Phi Epsilon
 Based at California State University, Fullerton
 
 ---
