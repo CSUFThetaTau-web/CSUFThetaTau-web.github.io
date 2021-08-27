@@ -248,6 +248,31 @@ main {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+#rushFlyer1 img {
+    border-radius: 25px;
+}
+
+#rushFlyer2 img {
+    border-radius: 25px;
+}
+
+#FAQFlyer1 img {
+    border-radius: 25px;
+}
+
+#FAQFlyer2 img {
+    border-radius: 25px;
+}
+
+
+#FAQFlyer3 img {
+    border-radius: 25px;
+}
+
+#FAQFlyer4 img {
+    border-radius: 25px;
+}
+
 /* responsive screen sizing */
 @media screen and (min-width: 1920px) {
     .flyerINFO {
