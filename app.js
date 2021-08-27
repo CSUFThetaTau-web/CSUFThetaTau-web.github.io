@@ -11,13 +11,6 @@ mobileMen.addEventListener('click', mobileMenu = () => {
     mobileMenLinks.classList.toggle('active');
 });
 
-// display internal mobile menu
-mobileMenInt.addEventListener('click', mobileMenu = () => {
-    mobileMen.classList.toggle('is-active');
-    mobileMenInt.classList.toggle('is-active');
-    mobileMenLinks.classList.toggle('active');
-});
-
 // darkmode
 var icon1 = document.getElementById("icon-1");
 var icon2 = document.getElementById("icon-2");

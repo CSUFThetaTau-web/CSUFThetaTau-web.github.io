@@ -86,7 +86,7 @@ footer {
     width: 100%;
     min-height: 100vh;
     background: var(--secondary-color);;
-    z-index: 2;
+    /* z-index: 1; */
 }
 
 /* Nav classes */
@@ -387,19 +387,20 @@ footer {
     font-weight: 500;
 }
 
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary-color);
-    font-size: 15px;
-}
-
 /* ===== IDs ===== */
 #logoImg {
     padding-top: 5px;
     width: 75px;
     min-width: 75px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /* ===== Mobile ===== */
@@ -467,12 +468,9 @@ footer {
         position: absolute;
         top: -1000px;
         opacity: 1;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.3s ease-in-out;
         z-index: 10;
         background: var(--duskdark-color);
-        border-bottom: var(--jacqueminotRed-color) solid 4px;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
         position: fixed;
     }
 
@@ -480,9 +478,9 @@ footer {
         background: var(--duskdark-color);
         top: 0;
         opacity: 1;
-        transition: all 0.5s ease-in-out;
-        z-index: 99;
-        height: 60vh;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        height: 100vh;
         font-size: 1.6rem;
     }
 
@@ -697,7 +695,7 @@ footer {
 
 @media (max-width: 1440px) and (max-height: 1080px) {
     .mobileNav-menu.active {
-        height: 80vh;
+        height: 100vh;
     }
 
     .mobileNav-link {
