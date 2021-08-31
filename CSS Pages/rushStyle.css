@@ -69,10 +69,10 @@ main {
 
 /* = Grids = */
 .educatorGrids {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 1em;
-    grid-auto-rows: minmax(100px, auto);
+    gap: 50px;
     height: auto;
     margin: auto;
     width: 80%;
@@ -93,15 +93,19 @@ main {
 }
 
 .educator-nested-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
 }
 
 .parent-nested-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
 }
 
 .educatorTitling {
@@ -295,8 +299,8 @@ details {
 
 .answer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     padding: 10px;
     margin-top: 10px;
@@ -313,99 +317,12 @@ details summary {
 }
 
 
-/* 
-.dropdown-item {
-    background: var(--lightGray-color);
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    width: 80%;
-    box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    text-decoration: none;
-    background-color: var(--lightGray-color);
-    width: 100%;
-    padding: 1rem 0;
-}
-
-.dropdown-link i {
-    color: var(--primary-color);
-    padding: 0.5rem;
-}
-
-.dropdown-link .fa-minus {
-    display: none;
-}
-
-.answer {
-    color: var(--primary-color);
-    overflow: hidden;
-    max-height: 0px;
-    position: relative;
-    border-radius: 10px;
-    background-color: var(--secondaryLightGray-color);
-    transition: max-height 650ms;
-}
-
-.answer::before {
-    content: "";
-    position: absolute;
-    width: 0.6rem;
-    height: 90%;
-    border-radius: 15px;
-    margin-left: 5px;
-    background-color: var(--jacqueminotRed-color);
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.answer p {
-    font-size: 17px;
-    padding: 1.5rem;
-}
-
-.dropdown-item:target .answer {
-    max-height: 20rem;
-}
-
-.dropdown-item:target .dropdown-link .fa-plus {
-    display: none;
-}
-
-.dropdown-item:target .dropdown-link .fa-minus {
-    display: block;
-} */
-
 /* ===== IDs ===== */
 #rushFlyer1 img {
     border-radius: 25px;
 }
 
 #rushFlyer2 img {
-    border-radius: 25px;
-}
-
-#FAQFlyer1 img {
-    border-radius: 25px;
-}
-
-#FAQFlyer2 img {
-    border-radius: 25px;
-}
-
-#FAQFlyer3 img {
-    border-radius: 25px;
-}
-
-#FAQFlyer4 img {
     border-radius: 25px;
 }
 
@@ -424,10 +341,6 @@ details summary {
 
 @media screen and (min-width: 1440px) {
     .rushInfo {
-        width: 60%;
-    }
-
-    .educatorGrids {
         width: 60%;
     }
 
@@ -463,11 +376,5 @@ details summary {
 
     .dropdown-item {
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .educator-nested-2 {
-        grid-template-columns: 1fr; 
     }
 }
