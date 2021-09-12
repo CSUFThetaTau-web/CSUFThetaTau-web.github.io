@@ -26,4 +26,4 @@ This is the official hosting page for our chapters organization website. This si
 - Instagram - [@csufthetatau](https://www.instagram.com/csufthetatau/)
 - Facebook - [@ThetaTauCSUF](https://www.facebook.com/ThetaTauCSUF)
 - LinkedIn - [Theta Tau - Phi Epsilon Chapter](https://www.linkedin.com/company/csufthetatau/mycompany/)
-- Website - [csufthetatau.org](https://www.csufthetatau.org/)
+- Website - [csufthetatau.com](http://www.csufthetatau.com/)
