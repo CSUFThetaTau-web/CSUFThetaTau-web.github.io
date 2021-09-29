@@ -289,7 +289,7 @@ footer {
 
 .SocialsContainer .socialsButton #IG_icon {
     margin-right: 5px;
-    background: #E1306C;
+    background: #97264c;
 }
 
 .SocialsContainer .socialsButton:hover #FB_icon {
@@ -299,7 +299,7 @@ footer {
 
 .SocialsContainer .socialsButton:hover #IG_icon {
     background: var(--softwhite-color);
-    color: #E1306C;
+    color: #97264c;
 }
 
 .SocialsContainer .socialsButton .socialsIcon i {
@@ -324,7 +324,7 @@ footer {
 }
 
 .SocialsContainer .socialsButton #IG_span {
-    color: #E1306C;
+    color: #97264c;
 }
 /* ===== SOCIAL MEDIA CLASSES ===== */
 
@@ -669,7 +669,7 @@ footer {
     }
     
     .SocialsContainer .socialsButton #IG_icon {
-        background: #E1306C;
+        background: #97264c;
     }
     
     .SocialsContainer .socialsButton .socialsIcon i {
@@ -681,7 +681,7 @@ footer {
     }
     
     .SocialsContainer .socialsButton:hover #IG_icon {
-        background: #E1306C;
+        background: #97264c;
     }
     
     .SocialsContainer .socialsButton #FB_span {
@@ -689,7 +689,7 @@ footer {
     }
     
     .SocialsContainer .socialsButton #IG_span {
-        color: #E1306C;
+        color: #97264c;
     }
     /* ===== SOCIAL MEDIA CLASSES ===== */
 }
