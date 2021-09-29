@@ -1,6 +1,8 @@
 # Official hosting for Theta Tau Phi Epsilon
 Based at California State University, Fullerton
 
+## Live @ https://www.csufthetatau.com/
+<br>
 <img src="images/Website SCRNSHT.PNG">
 
 ---
@@ -12,16 +14,12 @@ This is the official hosting page for our chapters organization website. This si
 
 > This project is continually developing as a website, meeting place, and tool for our chapter.
 
----
-
 #### Technologies
 
 - HTML5 / CSS3
 - JavaScript
 - PHP
 - Visual Studio Code
-
----
 
 ## Chapter Info
 
