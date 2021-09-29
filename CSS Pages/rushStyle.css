@@ -3,7 +3,8 @@
 :root {
     --primary-color: #12111A;
     --seondary-color: #FAFAFA;
-    --jacqueminotRed-color: #700000;
+    --heading-color: #700000;
+    --red-color: #700000;
     --sashGold-color: #CB9E00;
     --lightGray-color: #dddcdc;
     --secondaryLightGray-color: #c7c7c7;
@@ -12,8 +13,7 @@
 .dark-theme {
     --primary-color: #FAFAFA;
     --secondary-color: #12111A;
-    --jacqueminotRed-color: #700000;
-    --sashGold-color: #CB9E00;
+    --heading-color: #CB9E00;
     --lightGray-color: #919191;
     --secondaryLightGray-color: #777777;
 }
@@ -47,7 +47,7 @@ main {
 .levelUp {
     display: flex;
     font-size: 45px;
-    color: var(--jacqueminotRed-color);
+    color: var(--heading-color);
 }
 
 .midSectionContaner {
@@ -113,7 +113,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: var(--sashGold-color);
+    color: var(--heading-color);
 }
 
 .parentTitling {
@@ -121,7 +121,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: var(--sashGold-color);
+    color: var(--heading-color);
 }
 
 .images {
@@ -178,7 +178,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: var(--sashGold-color);
+    color: var(--heading-color);
 }
 /* = Grids = */
 
@@ -188,7 +188,7 @@ main {
     align-items: center;
   	text-align: center;
     font-size: 60px;
-    color: var(--jacqueminotRed-color);
+    color: var(--heading-color);
 }
 
 .rushEvents {
@@ -232,7 +232,7 @@ main {
     align-items: center;
     color: var(--seondary-color);
     background-image: linear-gradient(var(--sashGold-color) 0%, var(--sashGold-color) 15%, 
-        var(--jacqueminotRed-color) 90%, var(--jacqueminotRed-color) 100%);
+        var(--red-color) 90%, var(--red-color) 100%);
     font-size: 20px;
     padding: 0.5em 1.5em;
     border-radius: 50px;
@@ -273,7 +273,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: var(--sashGold-color);
+    color: var(--heading-color);
 }
 
 .faqs-box {

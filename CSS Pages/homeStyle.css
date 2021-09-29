@@ -5,7 +5,8 @@
     --softwhite-color: #FAFAFA;
     --primary-color: #12111A;
     --secondary-color: #FAFAFA;
-    --jacqueminotRed-color: #700000;
+    --heading-color: #700000;
+    --red-color: #700000;
     --sashGold-color: #CB9E00;
     --lightGray-color: #dddcdc;
 }
@@ -13,8 +14,7 @@
 .dark-theme {
     --primary-color: #FAFAFA;
     --secondary-color: #12111A;
-    --jacqueminotRed-color: #700000;
-    --sashGold-color: #CB9E00;
+    --heading-color: #CB9E00;
     --lightGray-color: #dddcdc;
 }
 
@@ -38,7 +38,7 @@ main {
     align-items: center;
   	text-align: center;
     font-size: 80px;
-    color: var(--jacqueminotRed-color);
+    color: var(--heading-color);
 }
 
 .textBox {
@@ -110,7 +110,7 @@ main {
     align-items: center;
     color: var(--softwhite-color);
     background-image: linear-gradient(var(--sashGold-color) 0%, var(--sashGold-color) 15%, 
-        var(--jacqueminotRed-color) 90%, var(--jacqueminotRed-color) 100%);
+        var(--red-color) 90%, var(--red-color) 100%);
     font-size: 20px;
     padding: 0.5em 1.5em;
     border-radius: 50px;
