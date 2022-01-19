@@ -1,3 +1,10 @@
+/* 
+    @file: brosStyle.css
+    @version: 4.0 Approved
+    @Updated: 01/2022
+    @Contributor(s): Spencer DeMera (Webmaster 2021), Carina Adrianzen (Webmaster Shadow Fall 2021)
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
 
 :root {
@@ -7,7 +14,8 @@
     --red-color: #700000;
     --classtitle-color: #700000;
     --sashGold-color: #CB9E00;
-    --lightGray-color: #dddcdc;
+    --lightGray-color: #dddcdc94;
+    --textWhite-color: #FAFAFA;
 }
 
 .dark-theme {
@@ -15,7 +23,8 @@
     --secondary-color: #12111A;
     --heading-color: #CB9E00;
     --classtitle-color: #CB9E00;
-    --lightGray-color: #dddcdc;
+    --sashGold-color: #700000;
+    --lightGray-color: #7979796e;
 }
 
 /* ===== Attributes ===== */
@@ -47,18 +56,19 @@ main {
     width: 90%;
 }
 
-.boardGrids div {
+.boardGrids a {
     padding: 1em;
 }
 
 .memberGrids {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 1em;
-    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
     height: auto;
     margin: auto;
-    width: 80%;
+    width: 90%;
+    gap: 50px;
 }
 
 .memberGrids div {
@@ -101,43 +111,16 @@ main {
 }
 
 .members-nested {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    cursor: pointer;
 }
 /* = Nested Grid Formatting = */
 
 /* = Nested Member Info = */
-.alpha-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
-.beta-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
-.gamma-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
-.delta-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
-.epsilon-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
-.zeta-nested {
-    text-align: center;
-    font-size: 17px;
-}
-
 .pageTitling {
     display: flex;
     justify-content: center;
@@ -176,22 +159,34 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    color: var(--classtitle-color);
+    text-align: center;
+    font-size: 20px;
+    color: var(--heading-color);
 }
 
 .images {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 170px;
 }
 
 .img img {
     border-radius: 50%;
     width: 170px;
     height: 170px;
+}
+
+.class-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.class-img img {
+    border-radius: 25px;
+    width: 400px;
+    height: 250px;
 }
 
 .names {
@@ -216,7 +211,6 @@ main {
         width: 60%;
         min-width: 60%;
     }
-}
 
     .memberGrids {
         width: 70%;

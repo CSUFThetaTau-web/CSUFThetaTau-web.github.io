@@ -20,12 +20,12 @@ icon1.onclick = () => {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
         localStorage.setItem('darkMode', 'enabled'); //store this data if dark mode is on
-        icon1.src = "images/sun.png";
+        icon1.src = "../images/sun.png";
         PElogo.src = "images/logo2.png";
     } // if
     else {
         localStorage.setItem('darkMode', 'disabled'); //store this data if dark mode is off
-        icon1.src = "images/moon.png";
+        icon1.src = "../images/moon.png";
         PElogo.src = "images/logo1.png";
     } // else 
 }
@@ -34,12 +34,12 @@ icon2.onclick = () => {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
         localStorage.setItem('darkMode', 'enabled'); //store this data if dark mode is on
-        icon2.src = "images/sun.png";
+        icon2.src = "../images/sun.png";
         PElogo.src = "images/logo2.png";
     } // if
     else {
         localStorage.setItem('darkMode', 'disabled'); //store this data if dark mode is off
-        icon2.src = "images/moon.png";
+        icon2.src = "../images/moon.png";
         PElogo.src = "images/logo1.png";
     } // else  
 }
@@ -47,12 +47,12 @@ icon2.onclick = () => {
 // localStorage module to check for stored 'enabled' value
 if (localStorage.getItem('darkMode') == 'enabled') {
     document.body.classList.toggle("dark-theme");
-    icon1.src = "images/sun.png";
-    icon2.src = "images/sun.png";
+    icon1.src = "../images/sun.png";
+    icon2.src = "../images/sun.png";
     PElogo.src = "images/logo2.png";
 } // if
 else {
-    icon1.src = "images/moon.png";
-    icon2.src = "images/moon.png";
+    icon1.src = "../images/moon.png";
+    icon2.src = "../images/moon.png";
     PElogo.src = "images/logo1.png";
 } // else
