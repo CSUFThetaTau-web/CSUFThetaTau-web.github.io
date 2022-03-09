@@ -1,0 +1,297 @@
+/* 
+    @file: contactStyle.css
+    @version: 4.0 Approved
+    @Updated: 01/2022
+    @Contributor(s): Spencer DeMera (Webmaster 2021)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+:root {
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
+    --heading-color: #700000;
+    --red-color: #700000;
+    --warning-color: red;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --heading-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+}
+
+input {
+    font-family: inherit;
+    font-size: medium;
+    line-height: inherit;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: medium;
+    line-height: inherit;
+}
+
+/* === Classes ===  */
+.formContainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    max-width: 700px;
+}
+
+.input-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-area div {
+    padding: 10px;
+}
+
+.names {
+    order: 1;
+    flex-basis: 50%;
+    height: 150px;
+}
+
+.emailaddy {
+    order: 2;
+    flex-basis: 100%;
+    height: 150px;
+}
+
+.sub {
+    order: 3;
+    flex-basis: 100%;
+    height: 150px;
+}
+
+.msg {
+    order: 4;
+    flex-basis: 100%;
+}
+
+.sender {
+    order: 5;
+    flex-basis: 100%;
+}
+
+.inputItem {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    padding: 0.3rem 0.5rem;
+    background-color: var(--lightGray-color);
+    background-clip: padding-box;
+    border: 1px solid var(--lightGray-color);
+    border-radius: 0.4rem;
+}
+
+.contact-form {
+    height: auto;
+    margin: auto;
+    color: var(--primary-color);
+    padding: 1em;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.emailCompletetxt {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    color: var(--heading-color);
+}
+
+.submit-area {
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    width: 40%;
+    padding: 0.60rem;
+    margin: 5px;
+    background-color: var(--heading-color);
+    border: 1px solid var(--heading-color);
+    color: var(--secondary-color);
+    font-size: inherit;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+    justify-content: center;
+}
+
+.submitBtn:hover {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 15px 25px -5px;
+    transform: scale(1.03);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:active {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 4px 8px;
+    transform: scale(0.9);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    font-size: 80px;
+    color: var(--heading-color);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    text-align: center;
+    flex-basis: 50%;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.sectionContainer img {
+    position: inherit;
+    top: 0;
+    left: 0;
+    clip: rect(200px, 0px, 400px, 0px);
+    /* top, right, bottom, left */
+}
+
+.gitContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 260px;
+    border-radius: 50px;
+    background: #bebebe;
+    cursor: pointer;
+}
+
+.gitBtn:hover {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 15px 25px -5px;
+    transform: scale(1.03);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gitBtn:active {
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 4px 8px;
+    transform: scale(0.9);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gitIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.gitIcon i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #424242;
+}
+
+/* ===== IDs ===== */
+#versionTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+#gitBtnText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 500;
+    color: #424242;
+    margin-right: 20px;
+}
+
+/* ===== Mobile ===== */
+/* 1080p mobile displays */
+@media screen and (max-width: 1440px) {
+	.emailCompletetxt {
+		font-size: 25px;
+	}
+
+	.labels {
+		font-size: 25px;
+	}
+
+	.submitBtn {
+		padding: 0.80rem;
+		font-size: 22px;
+	}
+
+	.text {
+		font-size: 30px;
+	}
+
+	.inputItem {
+		height: 4rem;
+	}
+}
+
+@media screen and (min-width: 720px) {
+    .submitBtn {
+		padding: 0.80rem;
+		font-size: 20px;
+        width: 60%;
+	}
+}
+
+

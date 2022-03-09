@@ -1,0 +1,268 @@
+/* 
+    @file: aboutStyle.css
+    @version: 4.0 Approved
+    @Updated: 01/2022
+    @Contributor(s): Spencer DeMera (Webmaster 2021), Ashley Kuewa
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+:root {
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
+    --heading-color: #700000;
+    --red-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --heading-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+}
+
+/* === Classes === */
+.pillars {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+
+.pillars div {
+    padding: 1em;
+}
+
+.histories {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    height: auto;
+    margin: auto;
+    width: 80%;
+}
+
+.brotherhood-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--primary-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.profesh-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--primary-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.community-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--primary-color);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 15fr;
+    grid-gap: 1em;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: small;
+}
+
+.gridText-pillars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.gridText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.pillarTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--heading-color);
+}
+
+.chaptHistTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--heading-color);
+}
+
+.natHistTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--heading-color);
+}
+
+/* = Nested Grid Formatting = */
+.nested-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.nested-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.nested-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+/* = Nested Grid Formatting = */
+
+.pillarsImages {
+    width: 100%;
+}
+
+#num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightGray-color);
+    color: var(--duskdark-color);
+    border-radius: 13px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--heading-color);
+}
+
+#broImg img {
+    border-radius: 25px;
+}
+
+#profreshImg img {
+    border-radius: 25px;
+}
+
+#serviceImg img {
+    border-radius: 25px;
+}
+
+#PEImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PEImg img {
+    width: 240px;
+}
+
+#shieldImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shieldImg img {
+    width: 240px;
+}
+
+/* responsive screen sizing */
+@media screen and (min-width: 1920px) {
+    .pillars {
+        width: 45%;
+        min-width: 45%;
+    }
+
+    .gridText-pillars {
+        font-size: 50px;
+    }
+
+    .histories {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pillars {
+        width: 55%;
+        min-width: 55%;
+    }
+
+    .gridText-pillars {
+        font-size: 22px;
+    }
+
+    .gridText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .pillars {
+        width: 80%;
+        min-width: 80%;
+    }
+
+	.pillarTitle {
+		font-size: 55px;
+	}
+
+	.chaptHistTitle {
+		font-size: 55px;
+	}
+
+	.natHistTitle {
+		font-size: 55px;
+	}
+
+    .gridText {
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,714 @@
+/* 
+    @file: mainStyle.css
+    @version: 4.0 Approved
+    @Updated: 01/2022
+    @Contributor(s): Spencer DeMera (Webmaster 2021), Carina Adrianzen (Webmaster Shadow Fall 2021)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+/* Main set of ΦΕ color variables */
+:root {
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
+    --heading-color: #700000;
+    --red-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --heading-color: #700000;
+    --lightGray-color: #dddcdc;
+}
+
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+}
+
+body {
+    background: var(--secondary-color);
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+p {
+    margin: 10px, 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+header {
+    background: var(--duskdark-color);
+}
+
+section {
+    background: var(--secondary-color);
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+
+footer {
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* ===== Classes ===== */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--secondary-color);;
+    /* z-index: 1; */
+}
+
+/* Nav classes */
+.navigation {
+    background-color: var(--duskdark-color);
+    color: var(--secondary-color);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation .menuItem {
+    color: var(--softwhite-color);
+	font-size: larger;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navigation .menuItem:hover {
+    background-color: var(--red-color);
+    border-radius: 17px;
+    transition: all 0.15s ease;
+}
+
+.navigation .flex {
+    justify-content: space-between;
+}
+/* Nav classes */
+
+/* Body of Footer */
+.OrgLinksContainer {
+    color: var(--primary-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+
+.LocationContainer {
+    color: var(--primary-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+
+.MainSocialsContainer {
+    color: var(--primary-color);
+    font-size: 25px;
+	margin-top: 15px;
+}
+/* Body of Footer */
+
+/* Grids */
+.LowerFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.LowerFooter .boxes {
+    padding: 1em;
+    background-color: #fafafa77;
+}
+/* Grids */
+
+/* ===== LINKS CLASSES ===== */
+.LinksContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.LinksContainer .linksButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.LinksContainer .linksButton:hover {
+    width: 200px;
+    color: var(--primary-color);
+    background-color: var(--softwhite-color);
+    border-radius: black solid 2px;
+}
+
+.LinksContainer .linksButton .linksIcon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: var(--softwhite-color);
+}
+
+.LinksContainer .linksButton #Cog_icon {
+    margin-right: 4px;
+    background: var(--red-color);
+}
+
+.LinksContainer .linksButton #Grad_icon {
+    margin-right: 5px;
+    background: #0d264d;
+}
+
+.LinksContainer .linksButton:hover #Cog_icon {
+    background: var(--softwhite-color);
+    color: var(--red-color);
+}
+
+.LinksContainer .linksButton:hover #Grad_icon {
+    background: var(--softwhite-color);
+    color: #0d264d;
+}
+
+.LinksContainer .linksButton .linksIcon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+}
+
+.LinksContainer .linksButton span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 8px;
+    margin-right: 16px;
+    transition: all 0.2s ease-out;
+}
+
+.LinksContainer .linksButton:hover #Cog_span {
+    color: var(--red-color);
+}
+
+.LinksContainer .linksButton:hover #Grad_span {
+    color: #0d264d;
+}
+/* ===== LINKS CLASSES ===== */
+
+/* ===== SOCIAL MEDIA CLASSES ===== */
+.SocialsContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.SocialsContainer .socialsButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.SocialsContainer .socialsButton:hover {
+    width: 181px;
+    color: var(--softwhite-color);
+    background-color: var(--softwhite-color);
+}
+
+.SocialsContainer .socialsButton .socialsIcon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: var(--softwhite-color);
+}
+
+.SocialsContainer .socialsButton #FB_icon {
+    margin-right: 11px;
+    background: #4267B2;
+}
+
+.SocialsContainer .socialsButton #IG_icon {
+    margin-right: 5px;
+    background: #97264c;
+}
+
+.SocialsContainer .socialsButton:hover #FB_icon {
+    background: var(--softwhite-color);
+    color: #4267B2;
+}
+
+.SocialsContainer .socialsButton:hover #IG_icon {
+    background: var(--softwhite-color);
+    color: #97264c;
+}
+
+.SocialsContainer .socialsButton .socialsIcon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+}
+
+.SocialsContainer .socialsButton span {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 8px;
+    margin-right: 19px;
+    transition: all 0.2s ease-out;
+}
+
+.SocialsContainer .socialsButton #FB_span {
+    color: #4267B2;
+}
+
+.SocialsContainer .socialsButton #IG_span {
+    color: #97264c;
+}
+/* ===== SOCIAL MEDIA CLASSES ===== */
+
+/* === Darkmode === */
+.darkmode-toggle {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.darkmode-icon {
+    width: 25px;
+}
+
+.darkmode-toggle .darkmode-icon i {
+    color: white;
+}
+
+.darkmode-icon:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.9);
+}
+
+.darkmode-icon:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.05);
+}
+/* === Darkmode === */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.desktopLocateInfo {
+    padding-top: 5em;
+}
+
+.LocationContainer {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.OrgLinksContainer {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.MainSocialsContainer {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* ===== IDs ===== */
+#logoImg {
+    padding-top: 5px;
+    width: 75px;
+    min-width: 75px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* ===== Mobile ===== */
+/* FHD+ (1080p & greater) desktop displays */
+@media(min-width: 1440px) {
+    .toggle {
+        display: none;
+    }
+
+    .mobileLocateInfo {
+        display: none;
+    }
+
+    .darkmode-mobile-toggle {
+        display: none;
+    }
+}
+
+/* -QHD (1440p & smaller) mobile displays */
+@media(max-width: 1440px) {
+    section {
+        padding-top: 150px;
+    }
+
+    /* === Nav === */
+    .navigation {
+        height: 150px;
+    }
+
+    #logoImg {
+        width: 100px;
+        min-width: 100px;
+    }
+	/* === Nav === */
+
+    /* === Darkmode === */
+    .darkmode-mobile-toggle {
+        margin-top: 1rem;
+        margin-right: 8rem;
+        cursor: pointer;
+    }
+    
+    .darkmode-icon {
+        width: 45px;
+    }
+    /* === Darkmode === */
+
+    /* === toggle menu === */
+    .mobileMenu {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 10;
+        width: 100%;
+        max-width: 1100px;
+        padding: 0;
+        background: var(--duskdark-color);
+    }
+
+    .mobileNav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        background: var(--duskdark-color);
+        position: fixed;
+    }
+
+    .mobileNav-menu.active {
+        background: var(--duskdark-color);
+        top: 0;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        height: 100vh;
+        font-size: 1.6rem;
+    }
+
+    .mobile-toggle .bar {
+        width: 75px;
+        height: 6px;
+        margin: 13px auto;
+        border-radius: 50px;
+        transition: all 0.2s ease-in-out;
+        background: var(--softwhite-color);
+    }
+
+    .internal-mobile-toggle .bar {
+        width: 75px;
+        height: 6px;
+        margin: 13px auto;
+        border-radius: 50px;
+        transition: all 0.15s ease-in-out;
+        background: var(--softwhite-color);
+    }
+
+    .mobileNav-item {
+        width: 100%;
+    }
+
+    .mobileNav-link {
+        color: var(--softwhite-color);
+        text-align: center;
+        padding: 0.7rem;
+        width: 100%;
+        display: table;
+        font-size: 65px;
+    }
+
+    .mobile-image {
+        padding: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileNav-imgItem {
+        width: 100px;
+    }
+
+    #internal-mobile-menu {
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    
+    #mobile-menu {
+        position: absolute;
+        top: 17%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .mobile-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .internal-mobile-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(19px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(19px) rotate(45deg);
+    }
+
+    #internal-mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-19px) rotate(-45deg);
+    }
+    /* === toggle menu === */
+
+    .headNav {
+        display: none;
+    }
+
+    .lowerNavigation {
+        display: none;
+    }
+
+    .FootLayout {
+        padding-top: 20px;
+    }
+
+    .desktopLocateInfo {
+        display: none;
+    }
+
+    .LocationContainer {
+        font-size: 25px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+
+    /* ===== LINKS CLASSES ===== */
+    .LinksContainer .linksButton {
+        height: 80px;
+		width: 80px;
+		border-radius: 80px;
+    }
+
+    .LinksContainer .linksButton:hover {
+        width: 80px;
+    }
+
+	.LinksContainer .linksButton .linksIcon {
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		padding-top: 2px;
+	}
+    
+    .LinksContainer .linksButton #Cog_icon {
+        background: var(--red-color);
+    }
+    
+    .LinksContainer .linksButton #Grad_icon {
+        background: #0d264d;
+    }
+    
+    .LinksContainer .linksButton .linksIcon i {
+        color: var(--softwhite-color);
+    }
+
+    .LinksContainer .linksButton:hover #Cog_icon {
+        background: var(--red-color);
+    }
+    
+    .LinksContainer .linksButton:hover #Grad_icon {
+        background: #0d264d;
+    }
+    
+    .LinksContainer .linksButton #Cog_span {
+        color: var(--red-color);
+    }
+    
+    .LinksContainer .linksButton #Grad_span {
+        color: #0d264d;
+    }
+    /* ===== LINKS CLASSES ===== */
+
+    /* ===== SOCIAL MEDIA CLASSES ===== */
+    .SocialsContainer .socialsButton {
+        height: 80px;
+		width: 80px;
+		border-radius: 80px;
+    }
+
+    .SocialsContainer .socialsButton:hover {
+        width: 80px;
+    }
+
+    .SocialsContainer .socialsButton .socialsIcon {
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		padding-top: 2px;
+	}
+    
+    .SocialsContainer .socialsButton #FB_icon {
+        background: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton #IG_icon {
+        background: #97264c;
+    }
+    
+    .SocialsContainer .socialsButton .socialsIcon i {
+        color: var(--softwhite-color);
+    }
+
+    .SocialsContainer .socialsButton:hover #FB_icon {
+        background: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton:hover #IG_icon {
+        background: #97264c;
+    }
+    
+    .SocialsContainer .socialsButton #FB_span {
+        color: #4267B2;
+    }
+    
+    .SocialsContainer .socialsButton #IG_span {
+        color: #97264c;
+    }
+    /* ===== SOCIAL MEDIA CLASSES ===== */
+}
+
+@media (max-width: 1440px) and (max-height: 1080px) {
+    .mobileNav-menu.active {
+        height: 100vh;
+    }
+
+    .mobileNav-link {
+        font-size: 55px;
+    }
+}
+/* ===== Mobile ===== */
+
