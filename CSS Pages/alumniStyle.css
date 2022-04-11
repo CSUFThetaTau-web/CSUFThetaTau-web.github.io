@@ -1,0 +1,131 @@
+﻿/* 
+    @file: alumniStyle.css
+    @version: 4.0 Approved
+    @Updated: 03/2022
+    @Contributor(s): Carina Adrianzen (Webmaster Spring 2022), Anthony Vences (Webmaster Shadow Spring 2022)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* Poppins Font */
+
+:root {
+    --duskdark-color: #12111A;
+    --softwhite-color: #FAFAFA;
+    --primary-color: #12111A;
+    --secondary-color: #FAFAFA;
+    --heading-color: #700000;
+    --red-color: #700000;
+    --sashGold-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+.dark-theme {
+    --primary-color: #FAFAFA;
+    --secondary-color: #12111A;
+    --heading-color: #CB9E00;
+    --lightGray-color: #dddcdc;
+}
+
+/* ===== Attributes ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-width: 520px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+}
+
+/* === Classes === */
+.sectionContainer {
+    width: 100%;
+    padding: 0 30rem 0;
+}
+
+.alumni-head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--primary-color);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alumni-descript {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--primary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: small;
+}
+
+.spotlightTitling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 65px;
+    color: var(--heading-color);
+}
+
+.categoryTitling {
+    width: auto;
+    height: auto;
+}
+/* = Nested Grid Formatting = */
+
+.spotlightImages {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#broImg img {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* responsive screen sizing */
+@media screen and (min-width: 1920px) {
+    .alumni-descript {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sectionContainer {
+        width: 100%;
+        padding: 0 20rem 0;
+    }
+
+    .alumni-descript {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sectionContainer {
+        width: 100%;
+        padding: 0 8rem 0;
+    }
+
+    .spotlightTitling {
+        font-size: 55px;
+    }
+}
